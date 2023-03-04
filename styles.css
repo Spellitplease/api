@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #333;
+    
+    
+}
+.navbar-nav.ml-auto{
+  margin-left: auto !important;
+}
+.logo{
+  width: 80px;
+  height: ratio 1/1;
+}
+
+body{
+    background-color:#184e77;
+}
+#who{
+  text-align: center;
+  color: white;
+}
+.card {
+    
+    width: 350px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top:30px;
+  }
+  
+  .card-header {
+    background-color: #333;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .card-header .text-header {
+    margin: 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .card-body {
+    padding: 15px;
+    height: 55vh;
+      }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #6d6d6d;
+    outline: none;
+    border-radius: 15px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    margin-top: 30px;
+    margin-left: 33%;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+    color: #333;
+  }
+
+  .faux {
+    border : solid red 2px;
+  }
+
+  .vrai {
+    border : solid green 2px;
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    min-height: 8vh;
+    background-color: #333;
+    bottom: 0;
+    color: rgb(194, 194, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ .copyright{
+  align-self: center;
+  bottom: 0;
+ }
+ ul{
+
+  margin-top: 10px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ padding: 0;
+  
+  
+  
+ }
+    
+  .social-icons {
+    width:25%;
+    display: inline-block;
+    
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  .social-icons li {
+   
+    list-style: none;
+  }
+  
+  
+  
+  
+  .social-icons a {
+    color: #ffffff;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+  }
+  
