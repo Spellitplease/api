@@ -1,85 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Vérification formulaire</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css" />
+  <title>Vérification formulaire</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid ">
-              <img class= "logo" src="logo-empty.png" alt="logo">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse fs-2" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Log in</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <div id="who">
-      <h1>Serial Coders Association.</h1>
-      <p>(Division Bric à brac et autres curiosités.)</p>
-    </div>
-    <div class="card">
-        <div class="card-header">
-          <div class="text-header">Enregistrez-vous</div>
-        </div>
-        <div class="card-body">
-          <form action="#">
-            <div class="form-group">
-              <label for="nom">Nom:</label>
-              <input required="" class="form-control" name="nom" id="nom" type="text" minlength="3">
-            </div>
-            <div class="form-group">
-              <label for="prenom">Prénom:</label>
-              <input required="" class="form-control" name="prenom" id="prenom" type="text" minlength="3">
-            </div>
-            <div class="form-group">
-              <label for="Age">Date de naissance:</label>
-              <input required="" class="form-control" name="age" id="age" type="date">
-              <p id="age-message"></p>
-            </div>
-            <div class="form-group">
-              <label for="Email">Email:</label>
-              <input required="" class="form-control" name="email" id="email" type="email">
-            </div>
-           <input type="submit" class="btn" value="Envoyer">    
-        </form>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <img class="logo" src="logo-empty.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fs-2" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="hidden">
+              <a class="nav-link" href="page2.html">Private</a>
+            </li>
+          </ul>
+
+
+
         </div>
       </div>
-            
-      
-      <footer>
-        <ul class="social-icons">
-          <ul>
-            <li><a class="reso" href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a></li>
-            <li><a class="reso" href="https://www.twitter.com"><img src="twitter-icon.png" alt="Twitter"></a></li>
-            <li><a class="reso" href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a></li>
-          </ul>
-        </ul>
-        
-        <p class="copyright">Copyright. Serial Coders Association.2023</p>
+    </nav>
+  </header>
+  <div id="who">
+    <h1>Serial Coders Association.</h1>
+    <p>(Division Bric à brac et autres curiosités.)</p>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <div class="text-header">Enregistrez-vous</div>
+    </div>
+    <div class="card-body">
+      <form id= "formulaire" action="#">
+        <div class="form-group">
+          <label for="nom">Nom:</label>
+          <input required="" class="form-control" name="nom" id="nom" type="text" minlength="3">
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom:</label>
+          <input required="" class="form-control" name="prenom" id="prenom" type="text" minlength="3">
+        </div>
+        <div class="form-group">
+          <label for="Age">Date de naissance:</label>
+          <input required="" class="form-control" name="age" id="age" type="date">
+          <p id="age-message"></p>
+        </div>
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input required="" class="form-control" name="email" id="email" type="email">
+        </div>
+        <input id="envoi" type="submit" class="btn" value="Envoyer">
+      </form>
+    </div>
+  </div>
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
+  <footer>
+    <ul class="social-icons">
+      <ul>
+        <li><a class="reso" href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a></li>
+        <li><a class="reso" href="https://www.twitter.com"><img src="twitter-icon.png" alt="Twitter"></a></li>
+        <li><a class="reso" href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a></li>
+      </ul>
+    </ul>
+
+    <p class="copyright">Copyright. Serial Coders Association.2023</p>
+
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
