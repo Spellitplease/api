@@ -74,7 +74,7 @@ const firstname = document.querySelector("#prenom");
 
   birthdateInput.addEventListener("input", validateAge);
   //email
-  const emailInput = document.querySelector("#email");
+const emailInput = document.querySelector("#email");
 function validateEmail(email) {
   const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return emailRegex.test(email);
@@ -90,6 +90,13 @@ if (emailInput) {
   emailInput.addEventListener("input", validation3);
 }
 });
+
+
+
+
+
+
+
 
 //page2
 

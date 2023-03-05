@@ -8,6 +8,13 @@ nav {
   height: 10vh;
 
 }
+.nav-link{
+  color:rgb(194, 194, 194);
+  text-shadow: 2px 2px 2px black;
+  
+  }
+  a.nav-link:hover{color: white;
+  }
 
 .logo {
   width: 80px;
@@ -25,6 +32,8 @@ ul {
 
 body {
   background: #184e77;
+  font-family: comfortaa, sans-serif;
+  font-weight: bold;
   margin-top: 10vh;
   margin-bottom: 11vh;
 }
@@ -34,7 +43,7 @@ td {
 
   font-size: 25px;
   color: white;
-  border: 2px solid black;
+  border: 1.5mm ridge rgb(39, 39, 39);
   text-align: center;
   min-width: fit-content;
 

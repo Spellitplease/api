@@ -9,10 +9,17 @@ nav {
 
 }
 
+.nav-link{
+  color:rgb(194, 194, 194);
+  text-shadow: 2px 2px 2px black;
+ }
+a.nav-link:hover{color: white;
+}
 
 .logo {
   width: 80px;
   height: ratio 1/1;
+ 
 }
 
 ul {
@@ -24,10 +31,13 @@ ul {
 
 
 }
+h1{
+  text-shadow: 3px 3px 3px black;
+}
 
 body {
-  background: #184e77;
-
+  background:radial-gradient(#184e77, #181818);
+font-family: comfortaa, sans-serif;
   margin-bottom: 10vh;
 }
 
@@ -42,7 +52,10 @@ li.hidden {
   text-align: center;
   color: white;
 }
-
+.text-header{
+  font-size: 1.2em;
+  font-weight: bold;
+}
 .card {
 
   width: 350px;
@@ -52,6 +65,7 @@ li.hidden {
   overflow: hidden;
   margin: 0 auto;
   margin-top: 30px;
+ 
 }
 
 .card-header {
@@ -69,6 +83,7 @@ li.hidden {
 .card-body {
   padding: 15px;
   height: 55vh;
+  
 }
 
 .form-group {
@@ -101,7 +116,7 @@ li.hidden {
 .btn {
   padding: 12px 24px;
   margin-top: 30px;
-  margin-left: 33%;
+  margin-left: 30%;
   font-size: 16px;
   border: none;
   border-radius: 15px;
@@ -109,7 +124,8 @@ li.hidden {
   color: #fff;
   text-transform: uppercase;
   transition: background-color 0.2s ease-in-out;
-  cursor: pointer
+  cursor: pointer;
+  
 }
 
 .btn:hover {
