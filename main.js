@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+let isInvalid = false;
+  
   //nom
   const name = document.querySelector("#nom");
 
   function validation() {
     if (name.value.length < 3) {
       name.style.borderColor = "red";
+      return isInvalid = true;
     } else {
       name.style.borderColor = "green";
+      return isInvalid = false;
     }
   }
 
@@ -20,30 +24,21 @@ const firstname = document.querySelector("#prenom");
   function validation2() {
     if (firstname.value.length < 3) {
       firstname.style.borderColor = "red";
+      return isInvalid = true;
     } else {
       firstname.style.borderColor = "green";
+      return isInvalid = false;
     }
   }
   if (firstname) {
     firstname.addEventListener("input", validation2);
   }
-  //date
-  // function verifAge(){
-  // const today = new Date();
-  // const dob = new Date(document.querySelector("#age").value);
-  // const age = (   today - dob)/(365*24*60*60*1000);
-  // if (age<18) {
-  //     alert ("Vous n'avez pas l'âge requis pour poursuivre l'inscription !");
-  // }
-  // }
-  // const dob = new Date(document.querySelector("#age"));
-  // if (dob) {
-  //     dob.addEventListener("input", verifAge);
-  // }
+
+  //AGE----------------------------------------------------------------------------------------------------------------------------------
 
   const birthdateInput = document.querySelector("#age");
   const ageMessage = document.querySelector("#age-message");
-
+  
   function calculateAge(birthdate) {
     const today = new Date();
     const birthdateObj = new Date(birthdate);
@@ -57,21 +52,20 @@ const firstname = document.querySelector("#prenom");
     }
     return age;
   }
-
+  
   function validateAge() {
     const birthdate = birthdateInput.value;
     const age = calculateAge(birthdate);
     if (age < 18) {
       ageMessage.textContent =
         "Vous devez avoir au moins 18 ans pour vous inscrire.";
-                
+        return isInvalid = true;
     } else {
       ageMessage.textContent = "";
-      
-      
+      return isInvalid = false;
     }
   }
-
+  
   birthdateInput.addEventListener("input", validateAge);
   //email
 const emailInput = document.querySelector("#email");
@@ -82,23 +76,31 @@ function validateEmail(email) {
 function validation3() {
   if (validateEmail(emailInput.value)) {
     emailInput.style.borderColor = "green";
+    return isInvalid = false;
   } else {
     emailInput.style.borderColor = "red";
+    return isInvalid = true;
   }
 }
 if (emailInput) {
   emailInput.addEventListener("input", validation3);
 }
 });
+//Validation formulaire entier-------------------------------------------------------------------------------------------------------------------------*-----
+
+// let envoiOk = document.querySelector('#envoi');
+
+// function finalValid (event) {
+//   if (isInvalid === true){
+//     event.preventDefault();
+//   }
+// };
+
+// envoiOk.addEventListener("submit",finalValid);
 
 
 
-
-
-
-
-
-//page2
+//page2---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 fetch("https://dummyjson.com/products")
   .then((data) => {
@@ -114,6 +116,8 @@ fetch("https://dummyjson.com/products")
       <td>${values.title}</td>
       <td>${values.description}</td>
       <td>${values.price} $</td>
+      <td>${values.discountPercentage} %</td>
+      <td>${values.rating}</td>
       <td>${values.stock} restants</td>
       <td><img id="img" src="${values.thumbnail}"/></td>
       </tr>`;
